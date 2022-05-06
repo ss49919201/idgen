@@ -1,0 +1,5 @@
+Install idgen.
+
+```
+$ go install
+```
