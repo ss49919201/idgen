@@ -3,12 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
-	"math/rand"
 	"os"
-	"time"
 
-	"github.com/google/uuid"
-	"github.com/oklog/ulid/v2"
 	"github.com/urfave/cli/v2"
 )
 
@@ -21,7 +17,7 @@ func main() {
 				Name:  "uuid",
 				Usage: "generate uuid",
 				Action: func(c *cli.Context) error {
-					id := uuid.New()
+					id := generateUUID()
 					fmt.Printf("uuid: %s\n", id)
 					return nil
 				},
@@ -30,9 +26,7 @@ func main() {
 				Name:  "ulid",
 				Usage: "generate ulid",
 				Action: func(c *cli.Context) error {
-					t := time.Now()
-					entropy := ulid.Monotonic(rand.New(rand.NewSource(t.UnixNano())), 0)
-					id := ulid.MustNew(ulid.Timestamp(t), entropy)
+					id := generateULID()
 					fmt.Printf("ulid: %s\n", id)
 					return nil
 				},
