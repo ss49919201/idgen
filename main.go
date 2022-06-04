@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 
@@ -9,33 +8,22 @@ import (
 )
 
 func main() {
-	app := &cli.App{
+	if err := run(app()); err != nil {
+		log.Fatal(err)
+	}
+}
+
+func run(app *cli.App) error {
+	return app.Run(os.Args)
+}
+
+func app() *cli.App {
+	return &cli.App{
 		Name:  "idgen",
 		Usage: "generate id",
 		Commands: []*cli.Command{
-			{
-				Name:  "uuid",
-				Usage: "generate uuid",
-				Action: func(c *cli.Context) error {
-					id := generateUUID()
-					fmt.Printf("uuid: %s\n", id)
-					return nil
-				},
-			},
-			{
-				Name:  "ulid",
-				Usage: "generate ulid",
-				Action: func(c *cli.Context) error {
-					id := generateULID()
-					fmt.Printf("ulid: %s\n", id)
-					return nil
-				},
-			},
+			cmdGenerateUUID(),
+			cmdGenerateULID(),
 		},
-	}
-
-	err := app.Run(os.Args)
-	if err != nil {
-		log.Fatal(err)
 	}
 }
