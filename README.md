@@ -7,5 +7,5 @@ Generate UUID and ULID with a simple command.
 Install idgen.
 
 ```
-$ go install
+$ go install github.com/s-beats/idgen@latest
 ```
