@@ -4,13 +4,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/oklog/ulid/v2"
 )
-
-func generateUUID() uuid.UUID {
-	return uuid.New()
-}
 
 func generateULID() ulid.ULID {
 	t := time.Now()
