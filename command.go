@@ -12,7 +12,7 @@ func cmdGenerateUUID() *cli.Command {
 		Usage: "generate uuid",
 		Action: func(c *cli.Context) error {
 			id := generateUUID()
-			fmt.Printf("uuid: %s\n", id)
+			fmt.Printf("UUID: %s\n", id)
 			return nil
 		},
 	}
@@ -24,7 +24,7 @@ func cmdGenerateULID() *cli.Command {
 		Usage: "generate ulid",
 		Action: func(c *cli.Context) error {
 			id := generateULID()
-			fmt.Printf("ulid: %s\n", id)
+			fmt.Printf("ULID: %s\n", id)
 			return nil
 		},
 	}
