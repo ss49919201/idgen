@@ -20,7 +20,7 @@ func run(app *cli.App) error {
 func app() *cli.App {
 	return &cli.App{
 		Name:  "idgen",
-		Usage: "generate id",
+		Usage: "Generate ID.",
 		Commands: []*cli.Command{
 			cmdGenerateUUID(),
 			cmdGenerateULID(),
