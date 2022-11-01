@@ -25,5 +25,6 @@ func app() *cli.App {
 			cmdGenerateUUID(),
 			cmdGenerateULID(),
 		},
+		HideHelp: true,
 	}
 }
