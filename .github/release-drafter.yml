@@ -1,16 +1,16 @@
-name-template: 'v$RESOLVED_VERSION 🌟'
+name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 
 categories:
-  - title: '🍣 Enhancement 🍣'
+  - title: 'Enhancement'
     label: enhancement'
-  - title: '🐝 Bug Fixes 🐝'
+  - title: 'Bug Fixes'
     label: 'bug'
-  - title: '🍰 Documentation 🍰'
+  - title: 'Documentation'
     label: 'documentation'
-  - title: '🖋 Renovate update 🖋'
+  - title: 'Renovate'
     label: 'renovate'
-  - title: '🍺 Refactoring 🍺'
+  - title: 'Refactor'
     label: 'refactor'
 
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
