@@ -8,17 +8,13 @@ import (
 )
 
 func main() {
-	if err := run(app()); err != nil {
+	if err := run(); err != nil {
 		log.Fatal(err)
 	}
 }
 
-func run(app *cli.App) error {
-	return app.Run(os.Args)
-}
-
-func app() *cli.App {
-	return &cli.App{
+func run() error {
+	app := &cli.App{
 		Name:  "idgen",
 		Usage: "Generate ID.",
 		Commands: []*cli.Command{
@@ -27,4 +23,5 @@ func app() *cli.App {
 		},
 		HideHelp: true,
 	}
+	return app.Run(os.Args)
 }
