@@ -2,7 +2,7 @@
 
 `idgen` is ID generator.
 
-Generate UUID and ULID with a easy command.
+Generate UUID or ULID with a easy command.
 
 ### Install idgen
 
