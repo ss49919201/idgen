@@ -12,6 +12,8 @@ categories:
     label: 'renovate'
   - title: 'Refactor'
     label: 'refactor'
+  - title: 'Configuration'
+    label: 'config'
 
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 
