@@ -2,9 +2,9 @@
 
 `idgen` is ID generator.
 
-Generate UUID and ULID with a easy command.
+Generate UUID or ULID with a easy command.
 
-### Install idgen
+### Install
 
 ```
 $ go install github.com/s-beats/idgen@latest
@@ -12,14 +12,14 @@ $ go install github.com/s-beats/idgen@latest
 
 ### Usage
 
-#### Generate UUID
+#### UUID
 
 ```sh
 $ idgen uuid
 UUID: 86aa212d-3333-4faf-848f-08cdb56326da
 ```
 
-#### Generate ULID
+#### ULID
 
 ```sh
 $ idgen ulid
