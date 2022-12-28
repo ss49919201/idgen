@@ -2,9 +2,6 @@
   "postUpdateOptions": [
     "gomodTidy"
   ],
-  "extends": [
-    "config:base"
-  ],
   "labels": [
     "renovate"
   ]
