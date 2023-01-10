@@ -16,12 +16,12 @@ $ go install github.com/ss49919201/idgen@latest
 
 ```sh
 $ idgen uuid
-UUID: 86aa212d-3333-4faf-848f-08cdb56326da
+86aa212d-3333-4faf-848f-08cdb56326da
 ```
 
 #### ULID
 
 ```sh
 $ idgen ulid
-ULID: 01GFDQJEDE7YQXKCRMQQ9NFJPD
+01GFDQJEDE7YQXKCRMQQ9NFJPD
 ```
