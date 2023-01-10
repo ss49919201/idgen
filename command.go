@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/urfave/cli/v2"
 )
+
+var writer = os.Stdout
 
 func cmdGenerateUUID() *cli.Command {
 	return &cli.Command{
@@ -12,7 +15,7 @@ func cmdGenerateUUID() *cli.Command {
 		Usage: "Generate UUID.",
 		Action: func(c *cli.Context) error {
 			id := generateUUID()
-			fmt.Printf("UUID: %s\n", id)
+			fmt.Fprintln(writer, id)
 			return nil
 		},
 	}
@@ -24,7 +27,7 @@ func cmdGenerateULID() *cli.Command {
 		Usage: "Generate ULID.",
 		Action: func(c *cli.Context) error {
 			id := generateULID()
-			fmt.Printf("ULID: %s\n", id)
+			fmt.Fprintln(writer, id)
 			return nil
 		},
 	}
