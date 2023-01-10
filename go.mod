@@ -1,4 +1,4 @@
-module github.com/s-beats/idgen
+module github.com/ss49919201/idgen
 
 go 1.19
 
