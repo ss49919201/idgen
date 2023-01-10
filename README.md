@@ -7,7 +7,7 @@ Generate UUID or ULID with a easy command.
 ### Install
 
 ```
-$ go install github.com/s-beats/idgen@latest
+$ go install github.com/ss49919201/idgen@latest
 ```
 
 ### Usage
