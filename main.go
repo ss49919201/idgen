@@ -15,8 +15,9 @@ func main() {
 
 func run() error {
 	app := &cli.App{
-		Name:  "idgen",
-		Usage: "Generate ID.",
+		Name:      "idgen",
+		Usage:     "Generate ID.",
+		UsageText: "idgen command",
 		Commands: []*cli.Command{
 			cmdGenerateUUID(),
 			cmdGenerateULID(),
