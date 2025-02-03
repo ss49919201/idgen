@@ -21,6 +21,7 @@ func run() error {
 		Commands: []*cli.Command{
 			cmdGenerateUUID(),
 			cmdGenerateULID(),
+			cmdGenerateUUIDV7(),
 		},
 		HideHelp: true,
 	}

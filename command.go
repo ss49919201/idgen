@@ -21,6 +21,21 @@ func cmdGenerateUUID() *cli.Command {
 	}
 }
 
+func cmdGenerateUUIDV7() *cli.Command {
+	return &cli.Command{
+		Name:  "uuidv7",
+		Usage: "Generate UUID V7.",
+		Action: func(c *cli.Context) error {
+			id, err := generateUUIDV7()
+			if err != nil {
+				return err
+			}
+			fmt.Fprintln(writer, id)
+			return nil
+		},
+	}
+}
+
 func cmdGenerateULID() *cli.Command {
 	return &cli.Command{
 		Name:  "ulid",
