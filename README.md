@@ -19,6 +19,13 @@ $ idgen uuid
 86aa212d-3333-4faf-848f-08cdb56326da
 ```
 
+#### UUID V7
+
+```sh
+$ idgen uuidv7
+0194ce36-5065-7098-92d9-5779007684d0
+```
+
 #### ULID
 
 ```sh
