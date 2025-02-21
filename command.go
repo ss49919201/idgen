@@ -36,18 +36,6 @@ func parseNumberOfIDsFlag(c *cli.Context) (*int, error) {
 	return &parsedN, nil
 }
 
-func generateMultiIDs[T any](generateId func() (T, error), number int) ([]T, error) {
-	ids := make([]T, 0, number)
-	for i := 0; i < number; i++ {
-		id, err := generateId()
-		if err != nil {
-			return nil, err
-		}
-		ids = append(ids, id)
-	}
-	return ids, nil
-}
-
 func cmdGenerateUUID() *cli.Command {
 	return &cli.Command{
 		Name:  "uuid",
