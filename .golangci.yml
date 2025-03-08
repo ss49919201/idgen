@@ -1,0 +1,6 @@
+linters:
+  enable-all: true
+linters-settings:
+  errcheck:
+    exclude-functions:
+      - os.Chdir
