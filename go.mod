@@ -1,11 +1,14 @@
 module github.com/ss49919201/idgen
 
-go 1.19
+go 1.22
+
+toolchain go1.24.3
 
 require (
 	github.com/google/uuid v1.6.0
 	github.com/oklog/ulid/v2 v2.1.0
 	github.com/urfave/cli/v2 v2.27.6
+	github.com/urfave/cli/v3 v3.3.3
 )
 
 require (
